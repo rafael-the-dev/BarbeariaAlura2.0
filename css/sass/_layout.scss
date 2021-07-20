@@ -1,0 +1,46 @@
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 28px 0;
+}
+
+
+
+// CONTAINER
+
+.container {
+    border: 1px solid red;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+ // BANNER
+ .banner {
+
+    background: url("../img/bg_banner.jpg") no-repeat center center;
+    background-color: $black-ligh;
+    height: 642px;
+    color: $white-normal;
+/*     display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+// LOSANGO
+.losango {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    margin-top: 8px;
+    margin-left: 8px;
+    /* Rotação */
+    transform: rotate(-45deg);
+}
+
+.losango-horizontal {
+    display: flex;
+}
