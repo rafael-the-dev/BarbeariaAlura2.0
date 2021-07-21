@@ -9,7 +9,14 @@
 
  body {
      width: 100%;
+     background: url("../img/bg_banner.jpg");
      background-color: $white-ligh;
+     height: auto;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 642px;
+     color: $white-normal;
  }
 
  @import 'sass/spacing';

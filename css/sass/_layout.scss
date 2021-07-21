@@ -6,28 +6,35 @@
     margin: 0 auto;
     padding: 12px;
 }
+
 // NAV
 nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
 }
 
-/* .nav-list {
+.nome {
+    margin: 0 8px 0 8px;
+}
+
+.nav-list {
     display: flex;
 }
 
-.nav-list li {
-    padding: 8px 24px;
+.nav-list li a {
+    color: $white-normal;
+    margin: 0 8px 0 8px;
     transition: .5s ease;
 
     &:hover {
-        color: $orange-dark;
-        opacity: 0.8;
+        color: $orange-ligh;
     }
-} */
+}
 
- // BANNER
-/*  .banner {
-
+// BANNER
+/*   .banner {
     background: url("../img/bg_banner.jpg") no-repeat center center;
     background-color: $black-ligh;
     height: 642px;
