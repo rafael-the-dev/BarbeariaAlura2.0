@@ -1,13 +1,3 @@
-/* MENU */
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 0 28px 0;
-}
-
-
-
 // CONTAINER
 
 .container {
@@ -16,20 +6,35 @@
     margin: 0 auto;
     padding: 12px;
 }
+// NAV
+nav {
+    display: flex;
+}
+
+/* .nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    padding: 8px 24px;
+    transition: .5s ease;
+
+    &:hover {
+        color: $orange-dark;
+        opacity: 0.8;
+    }
+} */
 
  // BANNER
- .banner {
+/*  .banner {
 
     background: url("../img/bg_banner.jpg") no-repeat center center;
     background-color: $black-ligh;
     height: 642px;
     color: $white-normal;
-/*     display: flex;
-    align-items: center;
-    justify-content: space-around; */
-}
+} */
 
-// LOSANGO
+/* // LOSANGO
 .losango {
     display: flex;
     width: 8px;
@@ -37,10 +42,9 @@
     background: #ccc;
     margin-top: 8px;
     margin-left: 8px;
-    /* Rotação */
     transform: rotate(-45deg);
 }
 
 .losango-horizontal {
     display: flex;
-}
+} */

@@ -47,13 +47,3 @@ strong{
 li {
     list-style: none;
 }
-
-.link {
-    padding: 8px 24px;
-    transition: .5s ease;
-
-    &:hover {
-        color: $orange-dark;
-        opacity: 0.8;
-    }
-}
