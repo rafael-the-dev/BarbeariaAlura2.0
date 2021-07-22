@@ -7,12 +7,20 @@
     /* border: 1px solid red; */
 }
 
+.header {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 1rem 5%;
+    width: 100%;
+}
 // NAV
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 72px;
+
+    //@meda
 }
 
 .nome {
@@ -21,29 +29,112 @@ nav {
 
 .nav-list {
     display: flex;
+
+    @media screen and (max-width: 501px) {
+        display: none;
+    }
+}
+
+.nav-list--mobile {
+    align-items: center;
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    position: absolute;
+    top: 66px;
+    right: 5%;
+    width: 90%;
 }
 
 .nav-list li a {
     color: $white-normal;
     margin: 0 8px 0 8px;
+    opacity: .9;
     transition: .5s ease;
 
     &:hover {
         color: $orange-ligh;
     }
+
+    
+}
+
+.nav__menu-button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    display: none !important;
+    font-size: 20px;
+    height: 30px;
+    outline: none;
+    width: 30px;
+
+    & .fa {
+        display: none;
+    }
+
+    @media screen and (max-width: 501px) {
+        & {
+            display: inline-block !important;
+        }
+
+        & .fa {
+            display: block;
+        }
+    }
 }
 
 // BANNER
 .banner {
+    background: url('../../img/bg_banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
     height: 521px;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: center;
+    width: 100%;
+
+    @media screen and (max-width: 501px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-.banner div {
+.banner__conteudo {
     padding: 12px;
+
+    @media screen and (max-width: 501px) {
+        & {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.banner__image-container {
+    @media screen and (max-width: 501px) {
+        & {
+            height: 60px;
+            width: 50%;
+        }
+    }
+}
+
+.banner__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner__titulo {
+    @media screen and (max-width: 501px) {
+        & {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 //SECTION SOBRE
