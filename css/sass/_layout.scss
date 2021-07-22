@@ -4,6 +4,7 @@
     max-width: 1224px;
     margin: 0 auto;
     padding: 12px;
+    /* border: 1px solid red; */
 }
 
 // NAV
@@ -34,23 +35,36 @@ nav {
 
 // BANNER
 .banner {
+    height: 521px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
 }
 
-/* // LOSANGO
-.losango {
-    display: flex;
-    width: 8px;
-    height: 8px;
-    background: #ccc;
-    margin-top: 8px;
-    margin-left: 8px;
-    transform: rotate(-45deg);
+.banner div {
+    padding: 12px;
 }
 
-.losango-horizontal {
+//SECTION SOBRE
+.sobre {
     display: flex;
-} */
+    align-items: center;
+    color: $black-ligh;
+    text-align: center;
+}
+.sobre div{
+    padding: 0 12px;
+}
+
+//SECTION VÍDEO
+.video{
+    display: flex;
+    padding: 0 12px;
+}
+
+.video iframe{
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
